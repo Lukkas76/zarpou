@@ -1,0 +1,473 @@
+﻿@font-face {
+    font-family: 'SourceSerifProRegular';
+    src: url('../fonts/SourceSerifPro-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    padding-top: 50px;
+    height: 100%;
+    font-family: Georgia, "DejaVu Serif", Times, "Times New Roman", serif !important;
+}
+
+body, html {
+    height: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Ubuntu", "Roboto", Helvetica, Arial, sans-serif !important;
+    font-weight: normal;
+    color: #fcfafa;
+    text-align: center;
+}
+
+h2, h3 {
+    text-align: left;
+    color: #485C60;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .pheader {
+        font-size: 16px;
+    }
+    .highlight {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .pheader {
+        font-size: 18px;
+    }
+    .highlight {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+}
+
+.pheader {
+    font-family: "Ubuntu", "Roboto", Helvetica, Arial, sans-serif;
+    color: #fcfafa;
+    text-align: center;
+    font-style: italic;
+    color: #485C60;
+}
+
+a, a:hover, a:focus {
+    color: #56A46E;
+}
+
+.tc-active a, .tc-active a:hover, .tc-active a:focus {
+    color: #56A46E !important;
+    background-color: #f9f9f9;
+}
+
+.navbar-default {
+    background-color: #fff;
+}
+
+    .navbar-default .navbar-brand {
+        color: #56A46E;
+    }
+
+.navbar-brand {
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif !important;
+    font-size: 24px;
+    line-height: 26px;
+    color: #56A46E;
+}
+
+    .navbar-brand > small {
+        color: #485C60;
+    }
+
+    .navbar-brand:hover {
+        color: #485C60;
+    }
+
+        .navbar-brand:hover > small {
+            color: #56A46E;
+        }
+
+.navbar-default .navbar-nav > li a {
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif !important;
+    color: #56A46E;
+}
+
+    .navbar-default .navbar-nav > li a:hover,
+    .navbar-default .navbar-nav > li a:focus {
+        background-color: #f9f9f9;
+        color: #56A46E;
+        text-decoration: none;
+    }
+
+.tc-shop {
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif !important;
+    color: #F15129 !important;
+}
+
+.navbar-default .navbar-toggle {
+    border: 0;
+}
+
+    .navbar-default .navbar-toggle:hover {
+        background-color: #fcfafa;
+    }
+
+    .navbar-default .navbar-toggle:focus {
+        background-color: #4f4f4f;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #56A46E;
+    }
+
+.navbar-brand > img {
+    display: inline;
+}
+
+.tc-footer {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    text-align: center;
+    border-top: 1px solid #e7e7e7;
+    background: #fff;
+    color: #485C60;
+    font-family: "Ubuntu", Helvetica, Arial, sans-serif !important;
+}
+
+.tc-title {
+    background-color: #56A46E;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-align: center;
+    min-width: 175px;
+    border: 2px solid transparent;
+    border-radius: 0;
+    font-family: "Ubuntu", "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    text-rendering: optimizeLegibility;
+    line-height: 2;
+}
+
+.btn-default,
+.btn-default:active,
+.btn-default.active, .open .dropdown-toggle.btn-default {
+    color: #fff;
+    border-color: #fff;
+    background-color: #485C60;
+}
+
+    .btn-default:hover,
+    .btn-default:focus {
+        outline-color: #485C60;
+        color: #485C60;
+        background-color: #fff;
+        border-color: #485C60;
+    }
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: none;
+    outline: none;
+    outline-offset: 0;
+}
+
+.btn-shop,
+.btn-shop:active,
+.btn-shop.active, .open .dropdown-toggle.btn-shop {
+    font-weight: bold;
+    color: #F15129;
+    background-color: #fff;
+    border-color: #F15129;
+    box-shadow: 5px 7px 2px #aaa;
+}
+
+    .btn-shop:hover,
+    .btn-shop:focus {
+        color: #fff;
+        background-color: #F15129;
+        border-color: #F15129;
+        outline-color: #F15129;
+        box-shadow: none;
+    }
+
+.tc-link,
+.tc-link:hover,
+.tc-link:focus,
+.tc-link:active,
+.tc-link.active {
+    color: #56A46E;
+}
+
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+    overflow: hidden;
+    display: inline-block; /* Necessary to trigger "hasLayout" in IE */
+    display: block; /* Sets element back to block */
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+.table-content {
+    font-family: "Warnock Pro", "Goudy Old Style","Palatino","Book Antiqua", Georgia, serif;
+    font-style: italic;
+    font-weight: normal;
+}
+
+/*homepage*/
+.tc-home-page {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #56A46E;
+}
+
+    .tc-home-page h1 {
+        text-align: left;
+        font-weight: 100;
+        margin: 3em auto 0;
+    }
+
+    .tc-home-page p {
+        color: #485C60;
+        font-style: italic;
+        font-family: initial;
+        margin: 0 auto 2em;
+    }
+
+@media (max-width: 768px) {
+    .tc-home-page h1 {
+        font-size: 30px;
+        line-height: 1.6;
+    }
+
+    .tc-home-page p {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 768px) {
+    .tc-home-page h1 {
+        font-size: 36px;
+        line-height: 1.8;
+    }
+
+    .tc-home-page p {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 992px) {
+    .tc-home-page h1 {
+        font-size: 48px;
+        line-height: 2;
+    }
+
+    .tc-home-page p {
+        font-size: 24px;
+        line-height: 1.5;
+    }
+}
+
+/*general presentation*/
+h3 > span {
+    color: #56A46E;
+    font-size: 0.8em;
+}
+
+
+.tc-features a {
+    font-size: 14px;
+}
+
+.pInstructions {
+    position: relative;
+    margin-top: 5px;
+    color: #485C60;
+    font-style: italic;
+    font-weight: 500;
+    text-align: center;
+}
+
+.tc-features-list li {
+    line-height: 2;
+    /list-style-position: inside;
+}
+
+.tc-features-list ul, .tc-features ul {
+    padding: 20px;
+}
+
+.tc-features-list-center {
+    text-align: center;
+}
+
+
+li > span {
+    color: #56A46E;
+    font-size: 0.6em;
+}
+
+.tc-features-list a {
+    margin: 10px auto 50px;
+}
+
+@media (max-width: 768px) {
+    .tc-features li, .tc-features-list li {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .tc-features-list h3 {
+    margin-top: 30px;
+}
+    .tc-features h2, .tc-all-features h2 {
+    margin-top: 30px;
+}
+
+}
+
+@media (min-width: 768px) {
+    .tc-features li {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+    .tc-features-list h3 {
+    margin-top: 50px;
+}
+    .tc-features h2 {
+    margin-top: 0;
+}
+
+
+}
+
+@media (min-width: 992px) {
+}
+
+/*exemples*/
+
+.tc-exemples h2 {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+    margin: 50px 0 30px;
+}
+
+.tc-exemples h3 {
+    color: #56A46E;
+    margin-bottom: 20px;
+}
+
+    .tc-exemples h3.tc-right {
+        text-align: right;
+    }
+
+/*documentation*/
+.tc-documentation h2 {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+    margin-bottom: 35px;
+}
+
+.tc-documentation h3 {
+    color: #56A46E;
+}
+
+/*release notes*/
+.tc-release-notes h2 {
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+}
+
+.tc-release-notes li {
+    padding-bottom: 5px;
+}
+
+.tc-release-notes h3 {
+    color: #56A46E;
+}
+
+    .tc-release-notes h3.tc-fix {
+        color: #485C60;
+    }
+
+.tc-release {
+    width: 100%;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    background: #cc3366;
+    color: #fcfafa;
+}
+
+.container > .tc-release {
+    margin-right: -15px;
+    margin-left: -15px;
+}

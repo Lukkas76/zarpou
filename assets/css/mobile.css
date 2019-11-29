@@ -1,0 +1,624 @@
+/*1026*/
+.informacoes-contato:before{
+   display: none
+}
+body{
+   overflow-x: hidden;
+   max-width: 1024px
+}
+.container{
+   padding: 0 15px
+}
+.nav-bar{
+   height: 50px
+}
+.nav-bar ul li{
+   padding: 12px 0;
+}
+.nav-bar ul li a{
+   font-size:17px
+}
+.tp-caption{
+   top: 18%;
+   z-index: 99
+}
+.btnGeral{
+   padding: 9px 30px
+}
+.btnGeral:before{
+   top: 11px;
+   right: 10px
+}
+.conteudo-banner img{
+   width: 300px
+}
+.progresso table tr td{
+   width: 50px
+}
+.holder-mobile .listagem-projeto{
+   overflow-x: scroll;
+   max-width: 100%
+}
+.holder-mobile .listagem-projeto ul{
+   width: 1710px
+}
+.container#projetos{
+   margin-bottom: 25px
+}
+.listagem-projeto .detalhe-projeto{
+   width: 310px
+}
+.listagem-projeto .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+   height: 40px
+}
+.listagem-projeto .mCSB_scrollTools.mCSB_scrollTools_horizontal{
+   top: 90%
+}
+.informacoes-projeto{
+   bottom: -5px;
+   background-color: rgba(255, 255, 255, 0.68);
+   height: 178px
+}
+.informacoes-projeto:hover{
+   bottom: none;
+}
+.informacoes-projeto h3{
+   font-size: 26px;
+   text-align: left;
+}
+.informacoes-projeto h4{
+   font-size: 16px;
+}
+.informacoes-projeto p{
+   font-size: 12px
+}
+.informacoes-projeto span{
+   display: block;
+   margin-bottom: 0
+}
+.informacoes-projeto .btnGeral{
+   position: absolute;
+   line-height: 13px
+}
+.fancybox-next{
+   right: -55px;
+}
+.fancybox-prev span{
+   left: 45px
+}
+.fancybox-prev span,
+.fancybox-next span{
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+.holder-projetos{
+   height: auto;
+}
+.page-projeto .main-container{
+   margin-top: 46px
+}
+.progresso table tr.numeracao-progresso td.branco{
+   width: 46px
+}
+.nav-bar.menu-fixo{
+   height: 50px
+}
+.empreendimentos .listagem-projeto{
+   text-align: center
+}
+@media(max-width:770px){
+   /*menu*/
+   .nav-bar ul{
+      display: block;
+      padding: 0;
+      width: 35%;
+      margin: 0;
+      right: -800px;
+      /*border-left: 1px solid #000;*/
+      background: #fff;
+      position: absolute;
+      top: 50px;
+      transition: all 500ms ease 0s;
+      z-index: 9999;
+      -webkit-box-shadow: -1px 1px 4px -1px rgba(0,0,0,0.75);
+      -moz-box-shadow: -1px 1px 4px -1px rgba(0,0,0,0.75);
+      box-shadow: -1px 1px 4px -1px rgba(0,0,0,0.75);
+   }
+   .nav-bar ul li{
+      border: none;
+      display: block;
+      float: right;
+   }
+   .menuIcon{
+       position: relative;
+       cursor: pointer;
+       text-align: center;
+       height: 100%
+   }
+   .menuIcon .top, .menuIcon .middle, .menuIcon .bottom{
+       right: 10px;
+       height: 5px;
+       width: 44px;
+       width: 35px;
+       position: absolute;
+       background: #000;
+       transition: all 400ms ease 0s;
+       -moz-transition: all 400ms ease 0s;
+       -webkit-transition: all 400ms ease 0s;
+       -ms-transition: all 400ms ease 0s;
+       -o-transition: all 400ms ease 0s
+   }
+   .menuIcon .top{
+       top: 13px
+   }
+   .menuIcon .middle{
+       top: 22px
+   }
+   .menuIcon .bottom{
+       top: 31px
+   }
+   .showMenu .top{
+       top: 22px;
+       border-radius: 1em;
+       transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+       -webkit-transform: rotate(-45deg);
+       -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg)
+   }
+   .showMenu .middle{
+       opacity: 0
+   }
+   .showMenu .bottom{
+       top: 22px;
+       border-radius: 1em;
+       transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+       -webkit-transform: rotate(45deg);
+       -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg)
+   }
+   .menu.show{
+      right: 0
+   }
+   .nav-bar ul li a{
+      font-size: 16px
+   }
+   .menu-hb{
+      display: block;
+   }
+   .home-mobile{
+      display: none
+   }
+   /*end-menu*/
+   .diferenciais p{
+      margin-top: 0
+   }
+   .navegacao-diferenciais{
+      margin-top: 15px
+   }
+   h1, h2{
+      font-size: 35px;
+      width: 50%;
+   }
+   .btnGeral{
+      font-size: 16px
+   }
+   .tp-logo-2{
+      top: 15px!important
+   }
+   .tp-banner .btnGeral:before{
+      top: 12px;
+      right: 10px
+   }
+   .tp-banner .btnGeral{
+      padding: 10px 25px;
+      font-size: 15px
+   }
+   .bloco-mapa .map{
+      height: 400px
+   }
+   .scroll-down{
+      top: 87%
+   }
+   .progresso table tr.numeracao-progresso td.branco{
+      width: 45px
+   }
+   .grafico-donut{
+      text-align: center;
+   }
+   .grafico-donut span{
+      left: 45%
+   }
+   #projetos h2{
+      margin-bottom: 50px
+   }
+   .bloco-nearby a img{
+      max-width: 11px
+   }
+   .bloco-nearby h4{
+      font-size:20px ;
+      width: 85%
+   }
+   .nav-bar.menu-fixo img{
+      position: absolute;
+      top: 10px;
+      display: block;
+      width: 110px;
+      height: auto;
+      left: 15px;
+   }
+   .empreendimentos .listagem-projeto{
+      text-align: center
+   }
+}
+@media(max-width:740px){
+   h1, h2{
+      font-size: 30px;
+      margin: 0 auto 30px
+   }
+   p{
+      font-size: 12px
+   }
+   footer{
+      padding: 15px 0
+   }
+   #intro{
+      margin: 40px auto 90px
+   }
+   .conteudo-banner img{
+      margin-bottom: 3%;
+      width: 150px!important;
+      height: 150px!important;
+   }
+   .tp-caption.tp-projeto{
+      width: 70px
+   }
+   .tp-caption img{
+      max-width: 100%
+   }
+   .nav-bar ul{
+      width: 200px
+   }
+   .nav-bar ul li{
+      padding: 3px 0
+   }
+   .informacoes-projeto{
+      height: 85px;
+      bottom: -10px
+   }
+   .informacoes-projeto h4{
+      margin-top: 8px
+   }
+   .progresso table tr.numeracao-progresso td.branco{
+      width: 45px
+   }
+   .diferenciais p{
+      font-size: 15px
+   }
+   .coluna-projeto h2, .coluna-projeto h3{
+      font-size: 25px
+   }
+   .plantas{
+      margin-bottom: 50px
+   }
+   .plantas.galeria .titulo-projeto a{
+      padding: 25px 35px
+   }
+   .plantas .navegacao{
+      float: none
+   }
+   .plantas .navegacao>.titulo-projeto{
+      display: inline-flex;
+      margin: -3px
+   }
+   .imagem-planta .carousel-inner{
+      width: 80%;
+      margin: 0 auto;
+   }
+   .imagem-planta .left.carousel-control,
+   .imagem-planta .right.carousel-control{
+      width: 30px
+   }
+   .bloco-mapa{
+      margin-bottom: 40px
+   }
+   .bloco-mapa .map{
+      height: 240px
+   }
+   .nearby{
+      height: auto;
+      margin-bottom: 50px
+   }
+   .bloco-nearby h4{
+      width: 90%;
+      font-size: 16px
+   }
+   .nearby .panel-default>.panel-heading,
+   .nearby  .bloco-nearby .panel-body{
+      padding: 15px
+   }
+   .bloco-nearby ul li{
+      font-size: 16px;
+      line-height: 20px
+   }
+   .coluna-tecnica{
+      margin-bottom: 50px
+   }
+   .status-da-obra h2{
+      margin-bottom: 60px
+   }
+   .coluna-tecnica h3,
+   .coluna-tecnica ul li{
+      font-size: 18px
+   }
+   .informacoes-projeto h3{
+      font-size:22px;
+      margin-top: 6px
+   }
+   .informacoes-projeto .btnGeral{
+      width: 185px;
+      padding: 15px 20px
+   }
+   .listagem-projeto .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar,
+   .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail{
+      height: 25px
+   }
+   .form-group{
+      padding: 0
+   }
+   .informacoes-contato ul li{
+      font-size: 16px;
+      line-height: 64px;
+      margin-bottom: 11px;
+   }
+   .imagem-contato{
+      width: 45px;
+      margin-right: 15px
+   }
+   .informacoes{
+      margin-bottom: 40px
+   }
+   .mCSB_scrollTools .mCSB_draggerContainer{
+      top: -1px
+   }
+
+}
+@media(max-width:670px){
+   .progresso table tr.numeracao-progresso td.branco{
+      width: 35px
+   }
+   .progresso table tr td{
+      width: 39px
+   }
+   .status-da-obra ul li{
+      font-size: 15px;
+      margin: 30px 0
+   }
+}
+@media(max-width:570px){
+   .tp-caption{
+      top: 5%
+   }
+   .progresso table tr.numeracao-progresso td.branco{
+      width: 33px
+   }
+   .progresso table tr td{
+      width: 37px
+   }
+   .status-da-obra ul li:first-child{
+      line-height:14px
+   }
+   .listagem-projeto .detalhe-projeto{
+      width: 280px
+   }
+   .empreendimentos .listagem-projeto .detalhe-projeto{
+      width: 100%;
+      max-width: 100%
+   }
+   .empreendimentos .listagem-projeto ul li{
+      display: none;
+   }
+   .empreendimentos .listagem-projeto ul li:first-child{
+      display: block;
+   }
+   .mCSB_scrollTools .mCSB_draggerContainer{
+      top: -4px
+   }
+}
+@media(max-width:418px){
+   .tp-caption {
+      top: 25%
+   }
+   .conteudo-banner img{
+      margin-bottom: 10%;
+      width: 200px!important;
+      height: 200px!important;
+   }
+   h1, h2{
+      width: 80%
+   }
+   .titulo-projeto h3{
+      font-size: 17px
+   }
+   .container#projetos{
+      margin-bottom: 0
+   }
+   footer p,
+   footer p a{
+      font-size: 16px
+   }
+   footer span{
+      font-size: 12px;
+      letter-spacing: 0.1px
+   }
+   .coluna-projeto{
+      width: 100%
+   }
+   .plantas .navegacao{
+      margin: 15px 20px 30px;
+   }
+   .plantas.galeria .titulo-projeto a{
+      padding: 25px 13px;
+      background-color: #fff;
+   }
+   .holder-nearby{
+      width: 100%
+   }
+   .bloco-nearby ul li{
+      font-size: 15px;
+      line-height: 22px
+   }
+   .form-control{
+      height: 30px
+   }
+   .form-control::-input-placeholder{
+      color: #000!important;
+      font-family: 'montserrat';
+      font-size: 12px;
+   }
+   .form-control::-moz-placeholder {
+      color: #000!important;
+      font-family: 'montserrat';
+      font-size: 12px;
+   }
+   .form-control::-webkit-input-placeholder{
+      color: #000!important;
+      font-family: 'montserrat';
+      font-size: 12px;
+   }
+   .mCSB_scrollTools .mCSB_draggerContainer{
+      top: -5px
+   }
+   .mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger{
+      width: 100px!important;
+      max-width: none;
+      min-width: 0!important;
+   }
+   .coluna-tecnica h3,
+   .coluna-tecnica ul li{
+      text-align: left;
+      list-style: none
+   }
+   .informacoes-contato,
+   .formulario-contato{
+      padding-top: 50px;
+      padding-bottom: 40px
+   }
+   .status-da-obra{
+      margin-top: 50px
+   }
+   .coluna-tecnica ul{
+      padding: 0
+   }
+   .galeria .titulo-projeto a{
+      padding: 25px 15px
+   }
+   .imagem-planta .left.carousel-control,
+   .imagem-planta .right.carousel-control{
+         width: 18px
+   }
+   .zoom{
+      display: none!important
+   }
+   .bloco-nearby h4{
+      width: 91%
+   }
+   .progresso table tr.numeracao-progresso td.branco{
+      font-size: 15px;
+      width: 22px;
+      transform: rotate(-40deg);
+   }
+   .progresso table tr td{
+      width: 26px
+   }
+   .status-da-obra .progresso{
+      padding: 0
+   }
+   .status-da-obra> div{
+      padding: 0 15px 0  0
+   }
+   .status-da-obra ul li{
+      margin: 25px 0;
+      line-height: 25px
+   }
+   .grafico-donut span{
+      left: 40%;
+   }
+   .informacoes-projeto:hover{
+      bottom: 0
+   }
+   .empreendimentos .listagem-projeto{
+      margin-bottom: 30px
+   }
+   .imagem-destaque{
+      height: 290px;
+   }
+}
+@media(max-width:385px){
+   .nav>li>a{
+      padding: 10px
+   }
+   .galeria li h3{
+      font-size: 18px
+   }
+   .plantas>div{
+      width: 100%
+   }
+   .plantas .navegacao>.titulo-projeto{
+      float: left;
+      display: inline-block;
+   }
+   .plantas .navegacao li:nth-child(2){
+      border-left: 0!important;
+      border-right: 0!important
+   }
+   .progresso table tr td{
+      width: 23px
+   }
+   .progresso table tr.numeracao-progresso td.branco{
+      font-size: 14px;
+      width: 19px;
+   }
+   .imagem-destaque{
+      height: 290px;
+   }
+}
+@media(max-width:330px){
+   .titulo-projeto h3{
+      font-size: 15px
+   }
+   .bloco-mapa{
+      margin-bottom: 60px
+   }
+   .galeria .titulo-projeto a{
+      padding: 25px 10px
+   }
+   .plantas .navegacao{
+      margin: 5px 15px 30px
+   }
+   .plantas .navegacao>.titulo-projeto{
+      padding: 0
+   }
+   .plantas .galeria li h3{
+      font-size: 14px
+   }
+   .progresso table tr td{
+      width: 19px;
+   }
+   .progresso table tr.numeracao-progresso td.branco{
+      font-size: 14px;
+      width: 14px;
+      transform: rotate(0);
+   }
+   .progresso table tr.numeracao-progresso td.branco:before{
+      content: " ";
+      border-right: 0px solid transparent;
+      padding-right: 6px;
+   }
+   .imagem-destaque{
+      height: 290px;
+   }
+
+}

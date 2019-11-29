@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<link>
+		<type><![CDATA[menu]]></type>
+		<class><![CDATA[sidebar-mini-hide]]></class>
+		<url>dashboard</url>
+		<menu><![CDATA[Dashboard]]></menu>
+		<icone><![CDATA[si si-speedometer]]></icone>
+		<idmenu><![CDATA[dashboard]]></idmenu>
+	</link>
+	<link>
+		<type><![CDATA[heading]]></type>
+		<class><![CDATA[sidebar-mini-hide]]></class>
+		<url></url>
+		<menu><![CDATA[Configurações Gerais]]></menu>
+		<icone><![CDATA[]]></icone>
+		<idmenu><![CDATA[config-produto]]></idmenu>
+	</link>
+	<link>
+		<type><![CDATA[menu]]></type>
+		<class><![CDATA[sidebar-mini-hide]]></class>
+		<url>contato/list-contato-site</url>
+		<menu><![CDATA[Listar Contatos]]></menu>
+		<icone><![CDATA[si si-bar-chart]]></icone>
+		<idmenu><![CDATA[contato]]></idmenu>
+	</link>
+	<link>
+		<type><![CDATA[menu]]></type>
+		<class><![CDATA[sidebar-mini-hide]]></class>
+		<url>sobre/list-sobre</url>
+		<menu><![CDATA[Focal Inc]]></menu>
+		<icone><![CDATA[si si-pin]]></icone>
+		<idmenu><![CDATA[focal]]></idmenu>
+	</link>
+	<link>
+		<type><![CDATA[menu]]></type>
+		<class><![CDATA[sidebar-mini-hide]]></class>
+		<url>contato/list-tipo-contato</url>
+		<menu><![CDATA[Informações de Contato]]></menu>
+		<icone><![CDATA[fa fa-comment-o]]></icone>
+		<idmenu><![CDATA[tipo-contato]]></idmenu>
+	</link>
+	<link>
+		<type><![CDATA[menu]]></type>
+		<class><![CDATA[sidebar-mini-hide]]></class>
+		<url>informacoes/list-informacoes</url>
+		<menu><![CDATA[Listar Mais Informações]]></menu>
+		<icone><![CDATA[fa fa-align-left]]></icone>
+		<idmenu><![CDATA[informacoes]]></idmenu>
+	</link>
+	<link>
+		<type><![CDATA[menu]]></type>
+		<class><![CDATA[sidebar-mini-hide]]></class>
+		<url>banner/config-banner</url>
+		<menu><![CDATA[Banner]]></menu>
+		<icone><![CDATA[fa fa-file-image-o]]></icone>
+		<idmenu><![CDATA[banner]]></idmenu>
+	</link>
+	<link>
+		<type><![CDATA[heading]]></type>
+		<class><![CDATA[sidebar-mini-hide]]></class>
+		<url></url>
+		<menu><![CDATA[Perfil do Usuário]]></menu>
+		<icone><![CDATA[]]></icone>
+		<idmenu><![CDATA[perfil-do-usuario]]></idmenu>
+	</link>
+	<link>
+		<type><![CDATA[menu]]></type>
+		<class><![CDATA[sidebar-mini-hide]]></class>
+		<url>user/perfil-user</url>
+		<menu><![CDATA[Meu Perfil]]></menu>
+		<icone><![CDATA[si si-user]]></icone>
+		<idmenu><![CDATA[meu-perfil]]></idmenu>
+	</link>
+	<link>
+		<type><![CDATA[heading]]></type>
+		<class><![CDATA[sidebar-mini-hide]]></class>
+		<url></url>
+		<menu><![CDATA[Configuração de Acesso]]></menu>
+		<icone><![CDATA[]]></icone>
+		<idmenu><![CDATA[config-acesso]]></idmenu>
+	</link>
+	<link class="dropdown">
+		<type><![CDATA[menu]]></type>
+		<class><![CDATA[sidebar-mini-hide]]></class>
+		<url></url>
+		<menu><![CDATA[Usuários]]></menu>
+		<icone><![CDATA[si si-users]]></icone>
+		<idmenu><![CDATA[usuarios]]></idmenu>
+		<sublink>
+			<link>
+				<type><![CDATA[menu]]></type>
+				<class><![CDATA[sidebar-mini-hide]]></class>
+				<url>user/list-all-users</url>
+				<menu><![CDATA[Listar usuários]]></menu>
+				<icone><![CDATA[]]></icone>
+				<idmenu><![CDATA[all-users]]></idmenu>
+			</link>
+		</sublink>
+	</link>
+	<link>
+		<type><![CDATA[menu]]></type>
+		<class><![CDATA[sidebar-mini-hide]]></class>
+		<url>logout</url>
+		<menu><![CDATA[Sair]]></menu>
+		<icone><![CDATA[si si-logout]]></icone>
+		<idmenu><![CDATA[logout]]></idmenu>
+	</link>
+</menu>

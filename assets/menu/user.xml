@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<link>
+		<type><![CDATA[menu]]></type>
+		<class><![CDATA[sidebar-mini-hide]]></class>
+		<url>dashboard</url>
+		<menu><![CDATA[Dashboard]]></menu>
+		<icone><![CDATA[si si-speedometer]]></icone>
+		<idmenu><![CDATA[dashboard]]></idmenu>
+	</link>
+	<link>
+		<type><![CDATA[menu]]></type>
+		<class><![CDATA[sidebar-mini-hide]]></class>
+		<url>logout</url>
+		<menu><![CDATA[Sair]]></menu>
+		<icone><![CDATA[si si-logout]]></icone>
+		<idmenu><![CDATA[logout]]></idmenu>
+	</link>
+</menu>

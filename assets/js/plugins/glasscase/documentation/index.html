@@ -1,0 +1,725 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head id="hd">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/site.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <title>GlassCase - Documentation | tinyComp</title>
+</head>
+<body>
+    <form id="frm">
+        <header class="navbar navbar-default navbar-default-top navbar-fixed-top one-edge-shadow">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                            class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><small>tiny</small>Comp</a>
+                </div>
+                <asp:hiddenfield id="hfMenu" runat="server" clientidmode="Static" />
+                <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+                    <ul id="mnTinyComp" class="nav navbar-nav navbar-right">
+                        <li><a href="/products/glasscase/glasscase.aspx">GlassCase</a></li>
+                        <li><a href="/products/glasscase/examples.aspx">Examples</a></li>
+                        <li><a href="/products/glasscase/documentation.aspx">Documentation</a></li>
+                        <li><a href="/products/glasscase/release.aspx">Release Notes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="tc-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h1>Documentation</h1>
+                                <p class="pheader">Customize it as you need</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row tc-documentation">
+                        <div class="col-md-12">
+                            <h2>Source Code Structure</h2>
+                            <p>Once you've downloaded the component, you'll get a zip file containing 3 folders:</p>
+                            <div class="highlight">
+                                <pre><code class="language-bash" data-lang="bash">glasscase/
+├── documentation/          -> the offline version of the plugin documentation
+├── glasscase_development/  -> the un-minified version of css and js files
+└── glasscase_production/   -> the minified version of css and js files
+</code></pre>
+                            </div>
+                            <p>General structure:</p>
+                            <div class="highlight">
+                                <pre><code class="language-bash" data-lang="bash">glasscase/
+├── css/          -> contains the css file
+├── fonts/        -> contains the fonts*(Linea Iconset), that are used for creating the icons for the component
+├── images/       -> contains loader.gif, that is used by the component 
+└── js/           -> contains the js file(s)
+</code></pre>
+                            </div>
+                            <p><em>*<a href="http://linea.io/" target="_blank" class="tc-link">Linea Iconset</a> is released for free under the license <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" class="tc-link">CC BY 4.0 LICENSE</a></em></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 tc-documentation">
+                    <h2>Getting Started</h2>
+                    <p><strong>1. </strong>Add the files to your project. To use GlassCase on a web page include the following files:</p>
+                    <div class="highlight">
+                        <pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- GlassCase stylesheet --&gt;</span>                                        
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"Stylesheet"</span><span class="nt"> <span class="na">type=</span><span class="s">"text/css"</span> <span class="na">href=</span><span class="s">"../css/glasscase.min.css"</span>/&gt;</span>
+<span class="c">&lt;!-- Modernizr a JavaScript library that detects HTML5 and CSS3 features in the user’s browser --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"../js/modernizr.custom.js"</span><span class="nt"> <span class="na">type=</span><span class="s">"text/javascript"</span>&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- GlassCase plugin requires jQuery 1.7+ --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"../js/jquery-1.8.3.min.js"</span><span class="nt"> <span class="na">type=</span><span class="s">"text/javascript"</span>&gt;</span><span class="nt">&lt;/script&gt;</span>
+<span class="c">&lt;!-- GlassCase plugin's JS script file --&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"../js/jquery.glasscase.min.js"</span><span class="nt"> <span class="na">type=</span><span class="s">"text/javascript"</span>&gt;</span><span class="nt">&lt;/script&gt;</span>
+</code></pre>
+                    </div>
+                    <div class="alert alert-warning">
+                        <p>Drop the script tags of <strong>Modernizr</strong> in the <code>&lthead&gt</code> of your HTML. For a better performance, you should have them follow after your stylesheet references.</p>
+                    </div>
+                    <p>
+                        <strong>2. </strong>
+                        Once you've included the necessary files, you can add 1 or more GlassCases to your
+                    page. The necessary HTML setup for the GlassCase consists of an unordered list of
+                    images. The images will be resized to be shown as thumbs and also will be used as
+                    display images.
+                    </p>
+                    <p>Optionally, you can add captions to the Zoom Area. It is sufficient to add to the image tag the attribute <code>data-gc-caption</code> with the caption text.</p>
+                    <div class="alert alert-warning">
+                        <p>
+                            It is very important that you add the class <code>gc-start</code> to the list
+                            of images.
+                        </p>
+                    </div>
+
+                    <div class="highlight">
+                        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">id=</span><span class="s">"glasscase"</span> <span class="na">class=</span><span class="s">"gc-start"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"images/img1.jpg"</span> <span class="na">alt=</span><span class="s">"Text"</span> <span class="na">data-gc-caption=</span><span class="s">"Your caption text"</span> <span class="nt">/&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"images/img2.jpg"</span> <span class="na">alt=</span><span class="s">"Text"</span> <span class="nt">/&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"images/img3.jpg"</span> <span class="na">alt=</span><span class="s">"Text"</span> <span class="nt">/&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre>
+                    </div>
+                    <br />
+
+                    <p><strong>3. </strong>After the HTML setup, you can call the plugin.</p>
+                    <div class="highlight">
+                        <pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Calling the GlassCase plugin --&gt;</span>
+<span class="nt">&lt;script </span><span class="nt"><span class="na">type=</span><span class="s">"text/javascript"</span>&gt;</span></code>
+    <code class="language-js" data-lang="js">
+    <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span> <span class="kd">function</span> <span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//If your &lt;ul&gt; has the id "glasscase"</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'#glasscase'</span><span class="p">).</span><span class="nx">glassCase</span><span class="p">(</span><span class="p">);</span>
+    <span class="p">});</span></code>
+    <code class="language-html" data-lang="html">
+<span class="nt">&lt;/script&gt;</span></code></pre>
+                    </div>
+                    <br />
+
+                    <p><strong>That's it!</strong></p>
+                    <p>The Demos you can see <strong><a href="/products/glasscase/examples.aspx" class="tc-link">here</a></strong>.</p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 tc-documentation">
+                    <h2>Customizing</h2>
+                    <p>
+                        The GlassCase plugin can be customized through <strong>options</strong>. The plugin
+                has a default configuration which is catered to the most basic and common use case.
+                But if you want the plugin to behave different from its default configuration, you
+                can override each of its default settings using the options.
+                    </p>
+
+                    <p>
+                        For example, to change
+                the plugin's thumbs position, from <em>bottom</em> to <em>top</em>, set the option <em>thumbsPosition</em>
+                        to <em>top</em>.
+                    </p>
+                    <br />
+                    <div class="highlight">
+                        <pre><code class="language-html" data-lang="html"><span class="nt">&lt;script </span><span class="nt"><span class="na">type=</span><span class="s">"text/javascript"</span>&gt;</span></code>
+    <code class="language-js" data-lang="js">
+    <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span> <span class="kd">function</span> <span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s1">'#glasscase'</span><span class="p">).</span><span class="nx">glassCase</span><span class="p">({ </span><span class="s1">'thumbsPosition'</span>: <span class="s1">'top'</span><span class="p"> });</span>
+    <span class="p">});</span></code>
+    <code class="language-html" data-lang="html">
+<span class="nt">&lt;/script&gt;</span></code></pre>
+                    </div>
+                    <p>Options are grouped by area to which they pertain or affect.</p>
+                    <h3>Display Options</h3>
+                    <table id="Table1" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Name
+                                </th>
+                                <th class="text-center">Type
+                                </th>
+                                <th class="text-center">Default
+                                </th>
+                                <th class="text-center">Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>widthDisplay
+                            </td>
+                            <td>number</td>
+                            <td>400
+                            </td>
+                            <td>The width of the Display. Value is in px.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>heightDisplay
+                            </td>
+                            <td>number</td>
+                            <td>534
+                            </td>
+                            <td>The height of the Display. Value is in px.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>isDownloadEnabled
+                            </td>
+                            <td>boolean</td>
+                            <td>true
+                            </td>
+                            <td>Enables or disables the feature of download. The feature consists in the ability to download the displayed image.
+                    <br />
+                                From version 1.1 the download icon will be visible(and available) only in modern browsers.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>isShowAlwaysIcons
+                            </td>
+                            <td>boolean</td>
+                            <td>false
+                            </td>
+                            <td>If true the icons on the Display Area will always be shown. If false, the icons we'll appear only when the user hovers the Display Area.
+                        <br />
+                                <span class="label label-success">Added in version 2.0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>speedHideIcons
+                            </td>
+                            <td>number</td>
+                            <td>3000
+                            </td>
+                            <td>The spead with which the icons disappear on the Display Area. The speed is given in milliseconds.
+                        <br />
+                                <span class="label label-success">Added in version 2.0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>mouseEnterDisplayCB
+                            </td>
+                            <td>function</td>
+                            <td>function () { }
+                            </td>
+                            <td>Callback for the mouseenter event of Display Image.
+                        <br />
+                                <span class="label label-success">Added in version 2.1</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>mouseLeaveDisplayCB
+                            </td>
+                            <td>function</td>
+                            <td>function () { }
+                            </td>
+                            <td>Callback for the mouseleave event of Display Image.
+                        <br />
+                                <span class="label label-success">Added in version 2.1</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3>Thumbs Options</h3>
+                    <table id="Table2" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Name
+                                </th>
+                                <th class="text-center">Type
+                                </th>
+                                <th class="text-center">Default
+                                </th>
+                                <th class="text-center">Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>thumbsPosition
+                            </td>
+                            <td>string</td>
+                            <td>bottom
+                            </td>
+                            <td>The position of thumbs: it is relative to the Display Area.
+                            <br />
+                                Possible values: <strong>top</strong>; <strong>bottom</strong>; 
+                            <strong>left</strong>; <strong>right</strong>.
+                            <br />
+                                The options <strong>left</strong>; <strong>right</strong> were <span class="label label-success">Added in version 2.0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>nrThumbsPerRow
+                            </td>
+                            <td>number</td>
+                            <td>5
+                            </td>
+                            <td>Number of thumbs per row.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>isThumbsOneRow
+                            </td>
+                            <td>boolean</td>
+                            <td>true
+                            </td>
+                            <td>If <strong>true</strong> -> the thumbs will be shown on one row;
+                                <br />
+                                If <strong>false</strong> -> all thumbs will be shown.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>isOneThumbShown
+                            </td>
+                            <td>boolean</td>
+                            <td>false
+                            </td>
+                            <td>Having only one thumb, it <em>(the thumb)</em> can be hidden. If the option is set to <strong>false</strong> the thumb will be hidden.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>firstThumbSelected
+                            </td>
+                            <td>number</td>
+                            <td>0
+                            </td>
+                            <td>Manages the ability to set the selected thumb on component load. Thumb counting starts with 0 (zero). If the set value is outside the range the value will be set to 0.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>colorActiveThumb
+                            </td>
+                            <td>string</td>
+                            <td>-1
+                            </td>
+                            <td>Sets the color of the active thumb. By default it will use the value set in the css.
+                            <br />
+                                To set a color use the following format: '#xxxxxx', where xxxxxx is the number of color in hex.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>thumbsMargin
+                            </td>
+                            <td>number</td>
+                            <td>3
+                            </td>
+                            <td>The distance between the thumbs and display area.
+                                                <br />
+                                The value is in px.
+                            <br />
+                                <span class="label label-success">Added in version 1.4</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>isHoverShowThumbs
+                            </td>
+                            <td>boolean</td>
+                            <td>false
+                            </td>
+                            <td>If true, hovering a thumb will change the displayed image.
+                            <br />
+                                <span class="label label-success">Added in version 2.0</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3>Zoom Options</h3>
+                    <table id="Table3" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Name
+                                </th>
+                                <th class="text-center">Type
+                                </th>
+                                <th class="text-center">Default
+                                </th>
+                                <th class="text-center">Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>zoomPosition
+                            </td>
+                            <td>string</td>
+                            <td>right
+                            </td>
+                            <td>The position of the Zoom: it is relative to the Display Area.
+                            <br />
+                                Possible values: <strong>left</strong>; <strong>right</strong>; <strong>inner</strong>.
+                            <br />
+                                The <strong>inner</strong> option was <span class="label label-success">Added in version 2.0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>autoInnerZoom
+                            </td>
+                            <td>boolean</td>
+                            <td>true
+                            </td>
+                            <td>If true: In case that the zoom doesn't fit on the page, the zoom will be set in <strong>inner</strong> zoom position.
+                            <br />
+                                <span class="label label-success">Added in version 2.0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>isZoomEnabled
+                            </td>
+                            <td>boolean</td>
+                            <td>true
+                            </td>
+                            <td>Enables or disables the zoom.
+                            <br />
+                                <span class="label label-success">Added in version 1.1</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>isSlowZoom
+                            </td>
+                            <td>boolean</td>
+                            <td>false
+                            </td>
+                            <td>Enables the effect of "slowing" the movement of zoom.
+                            <br />
+                                <span class="label label-success">Added in version 1.3</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>speedSlowZoom
+                            </td>
+                            <td>number</td>
+                            <td>1200
+                            </td>
+
+                            <td>Determines how long the animation will run. The speed is given in milliseconds.
+                            <br />
+                                <span class="label label-success">Added in version 1.3</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>isZoomDiffWH
+                            </td>
+                            <td>boolean</td>
+                            <td>false
+                            </td>
+                            <td>Determines if the zoom's width and height have different values.<br />
+                                If <em>false</em> and zoomWidth == 0 and zoomHeight == 0 => width will be equal to height of the image container.<br />
+                                If <em>true</em> => height will be different from width.<br />
+                                <span class="label label-success">Added in version 1.4</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>zoomWidth
+                            </td>
+                            <td>number</td>
+                            <td>0
+                            </td>
+                            <td>The width of the zoom. The value is in px.<br />
+                                If zoomWidth is bigger than the width of the original image then to the zoomWidth will be assigned 
+                            the width of the original image.
+                                                <br />
+                                If zoomWidth == 0 then to zoomWidth will be assigned the width of the Display Container.
+                            <br />
+                                <span class="label label-success">Added in version 1.4</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>zoomHeight
+                            </td>
+                            <td>number</td>
+                            <td>0
+                            </td>
+                            <td>The height of the zoom. The value is in px.<br />
+                                If zoomHeight is bigger than the height of the original image then to the zoomHeight will be assigned 
+                            the height of the original image.
+                                                <br />
+                                If zoomHeight == 0 then to zoomHeight will be assigned the height of the Display Container.
+                            <br />
+                                <span class="label label-success">Added in version 1.4</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>zoomAlignment
+                            </td>
+                            <td>string</td>
+                            <td>displayImage
+                            </td>
+                            <td>Possible values: <strong>displayImage</strong>, <strong>displayArea</strong>.
+                            <br />
+                                <span class="label label-success">Added in version 1.4</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>zoomMargin
+                            </td>
+                            <td>number</td>
+                            <td>3
+                            </td>
+                            <td>The distance between the Zoom Area and Display Area.
+                                                <br />
+                                The value is in px.
+                            <br />
+                                <span class="label label-success">Added in version 1.4</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>isZCapEnabled
+                            </td>
+                            <td>boolean</td>
+                            <td>true
+                            </td>
+                            <td>Enables or disables captions for Zoom Area.
+                            <br />
+                                <span class="label label-success">Added in version 2.1</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>capZType
+                            </td>
+                            <td>string</td>
+                            <td>in
+                            </td>
+                            <td>The type of captions: <strong>in</strong>-side the Zoom Area or <strong>out</strong>-side the Zoom Area.
+                            If Zoom position is <code>inner</code> => the type of the captions will be set to <code>in</code>.
+                            <br />
+                                Possible values: <strong>in</strong>; <strong>out</strong>.
+                            <br />
+                                <span class="label label-success">Added in version 2.1</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>capZPos
+                            </td>
+                            <td>string</td>
+                            <td>bottom
+                            </td>
+                            <td>Position of captions in relation to the Zoom Area.
+                            <br />
+                                Possible values: <strong>bottom</strong>; <strong>top</strong>.
+                            <br />
+                                <span class="label label-success">Added in version 2.1</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>capZAlign
+                            </td>
+                            <td>string</td>
+                            <td>center
+                            </td>
+                            <td>The alignment of the caption text.
+                            <br />
+                                Possible values: <strong>center</strong>; <strong>left</strong>; <strong>right</strong>.
+                            <br />
+                                <span class="label label-success">Added in version 2.1</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3>Lens Options</h3>
+                    <table id="Table4" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Name
+                                </th>
+                                <th class="text-center">Type
+                                </th>
+                                <th class="text-center">Default
+                                </th>
+                                <th class="text-center">Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>isSlowLens
+                            </td>
+                            <td>boolean</td>
+                            <td>false
+                            </td>
+                            <td>Enables the effect of "slowing" the movement of lens.
+                            <br />
+                                <span class="label label-success">Added in version 1.3</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>speedSlowLens
+                            </td>
+                            <td>number</td>
+                            <td>600
+                            </td>
+                            <td>Determines how long the animation will run. The speed is given in milliseconds.
+                            <br />
+                                <span class="label label-success">Added in version 1.3</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3>Overlay Options</h3>
+                    <table id="Table5" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Name
+                                </th>
+                                <th class="text-center">Type
+                                </th>
+                                <th class="text-center">Default
+                                </th>
+                                <th class="text-center">Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>isOverlayEnabled
+                            </td>
+                            <td>boolean</td>
+                            <td>true
+                            </td>
+                            <td>Enables or disables the overlay.
+                            <br />
+                                <span class="label label-success">Added in version 1.1</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>isOverlayFullImage
+                            </td>
+                            <td>boolean</td>
+                            <td>true
+                            </td>
+                            <td>If <strong>true</strong> the image in overlay will be shown in full size and only.
+                            <br />
+                                If <strong>false</strong> the image will fit the display. 
+                            On double clicking, the image size will be toggled. 
+                            If the image is in fit => after double click it will be shown in full size. 
+                            If the image is in full size => after double click it will fit the display.
+                            <br />
+                                <span class="label label-success">Added in version 1.3</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <h3>General Options</h3>
+                    <table id="Table7" class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th class="text-center">Name
+                                </th>
+                                <th class="text-center">Type
+                                </th>
+                                <th class="text-center">Default
+                                </th>
+                                <th class="text-center">Description
+                                </th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>isKeypressEnabled
+                            </td>
+                            <td>boolean</td>
+                            <td>true
+                            </td>
+                            <td>If true, the option enables the keyboard navigation. If false it disables the keyboard navigation.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>colorIcons
+                            </td>
+                            <td>string</td>
+                            <td>-1
+                            </td>
+                            <td>Sets the color of icons used by the component. By default, it will use the color defined in css.
+                            <br />
+                                To set a color use the following format: '#xxxxxx', where xxxxxx is the number of color in hex.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>speed
+                            </td>
+                            <td>number</td>
+                            <td>400
+                            </td>
+                            <td>Determines how long the animation will run. The speed is given in milliseconds.
+                        <br />
+                                This value is used in the animation of lens; zoom; overlay; slide.
+                        <br />
+                                <span class="label label-success">Added in version 1.3</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>colorLoading
+                            </td>
+                            <td>string</td>
+                            <td>-1
+                            </td>
+                            <td>Sets the color of the loading wheel used by the component. By default, it will use the color defined in css.
+                            <br />
+                                To set a color use the following format: '#xxxxxx', where xxxxxx is the number of color in hex.
+                            <br />
+                                <span class="label label-success">Added in version 2.0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>textImageNotLoaded
+                            </td>
+                            <td>string</td>
+                            <td>NO IMAGE
+                            </td>
+                            <td>The text that is used by the holder, in case that the image did not load.
+                            <br />
+                                <span class="label label-success">Added in version 2.0</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="tc-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <footer>
+                            <p class="small">
+                                &copy; 2015 <small>tiny</small>Comp. All rights reserved.
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <script src="./js/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>

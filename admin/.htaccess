@@ -1,0 +1,17 @@
+RewriteEngine on
+#RewriteBase /codeigniter
+#RewriteCond ${SCRIPT_FILENAME} !-f
+#RewriteCond ${SCRIPT_FILENAME} !-d
+#RewriteRule ˆ(.*)$ /index.php/$1 [L]
+
+#RewriteEngine on
+#RewriteCond $1 !^(index\.php|images|robots\.txt)
+#RewriteRule ^(.*)$ /index.php/$1 [L]
+
+
+
+#RewriteEngine On
+#RewriteBase /codeigniter/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /admin/index.php?/$1 [L]

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'montserrat';
+  src: url('Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('Montserrat-Regular.woff') format('woff'),
+  url('Montserrat-Regular.ttf')  format('truetype'),
+  url('Montserrat-Regular.svg#Montserrat-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'dinregular';
+  src: url('DINCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+  url('DINCondensed-Regular.woff') format('woff'),
+  url('DINCondensed-Regular.ttf')  format('truetype'),
+  url('DINCondensed-Regular.svg#DINCondensed-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'dinbold';
+    src: url('din-bold-webfont.woff2') format('woff2'),
+         url('din-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
